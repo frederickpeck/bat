@@ -939,9 +939,9 @@ Average lifespan (in years)
 TEXTBOX
 365
 500
-613
+678
 542
-Resistance is how well the bat can fight off the fungus and keep it from growing on its body
+Resistance is how well the bat can fight off the\nfungus and keep it from growing on its body
 11
 0.0
 1
@@ -949,9 +949,9 @@ Resistance is how well the bat can fight off the fungus and keep it from growing
 TEXTBOX
 364
 607
-596
+672
 658
-Tolerance is how well the bat can stay alive even though the fungus is still on its body
+Tolerance is how well the bat can stay alive\neven though the fungus is still on its body
 11
 0.0
 1
@@ -959,9 +959,9 @@ Tolerance is how well the bat can stay alive even though the fungus is still on 
 TEXTBOX
 364
 717
-611
+676
 770
-The climate affects how well the fungus grows in the cave
+The climate affects how well the fungus grows\nin the cave
 11
 0.0
 1
@@ -1100,8 +1100,8 @@ Resistance
 TEXTBOX
 547
 500
-593
-518
+614
+531
 fight off
 11
 15.0
@@ -1120,8 +1120,8 @@ Tolerance
 TEXTBOX
 542
 607
-593
-625
+623
+631
 stay alive
 11
 15.0
@@ -1160,18 +1160,18 @@ Start
 TEXTBOX
 535
 717
-611
-735
+634
+752
 fungus grows
 11
 15.0
 1
 
 TEXTBOX
-1676
-101
-1897
-155
+1664
+110
+1885
+164
 what's happening
 22
 15.0
