@@ -81,14 +81,14 @@
 
 <script>
   // Show challenge modal after 3 seconds
-  window.onload = () => {
+  window.addEventListener('load', () => {
     setTimeout(() => {
       document.getElementById('challengeModal').style.display = 'block';
     }, 3000);
-  };
+  });
 
   // Inactivity refresh
-  let inactivityTime = 0.2 * 60 * 1000; // 0.2 minutes
+  let inactivityTime = 5 * 60 * 1000; // 5 minutes
   let inactivityTimer;
 
   function resetTimer() {
@@ -99,11 +99,12 @@
   }
 
   // Track user activity
-  window.onload = resetTimer;
-  window.onmousemove = resetTimer;
-  window.onkeypress = resetTimer;
-  window.ontouchstart = resetTimer;
-  window.onclick = resetTimer;
+  ['mousemove', 'keypress', 'touchstart', 'click'].forEach(event => {
+    window.addEventListener(event, resetTimer, false);
+  });
+
+  // Initialize timer on load
+  window.addEventListener('load', resetTimer);
 </script>
 
 </body>
