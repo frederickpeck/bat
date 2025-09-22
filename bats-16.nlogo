@@ -1158,9 +1158,9 @@ Start
 1
 
 TEXTBOX
-545
+547
 709
-644
+646
 744
 fungus grows
 11
@@ -1168,9 +1168,9 @@ fungus grows
 1
 
 TEXTBOX
-1670
+1665
 104
-1891
+1886
 158
 what's happening
 22
