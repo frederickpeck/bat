@@ -340,7 +340,7 @@ to setup-patches
     set cave? true
     set pcolor cave-color
   ]
-  ask patch (mean [pxcor] of patches with [cave?] + 5) (max-pycor - 3) [
+  ask patch (mean [pxcor] of patches with [cave?] + 5) (max-pycor - 6) [
     set plabel "CAVE"
   ]
 
@@ -398,7 +398,7 @@ to setup-patches
   ]
 
 
-  ask patch 0 (max-pycor - 3) [
+  ask patch 0 (max-pycor - 6) [
     set plabel season
   ]
 
@@ -811,7 +811,7 @@ to color-patches
     )
   ]
 
-  ask patch 0 (max-pycor - 3) [
+  ask patch 0 (max-pycor - 6) [
     set plabel season
   ]
 end
@@ -820,7 +820,7 @@ end
 to end-sim
   ask patches with [not contaminated? and not (cave? or cave-border?)] [
     set pcolor infected-bat-color
-    ask patch 0 (max-pycor - 3) [
+    ask patch 0 (max-pycor - 6) [
       set plabel "** all dead **"
     ]
   ]
