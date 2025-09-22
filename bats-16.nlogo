@@ -940,7 +940,7 @@ TEXTBOX
 365
 500
 613
-528
+542
 Resistance is how well the bat can fight off the fungus and keep it from growing on its body
 11
 0.0
@@ -950,7 +950,7 @@ TEXTBOX
 364
 607
 596
-636
+658
 Tolerance is how well the bat can stay alive even though the fungus is still on its body
 11
 0.0
@@ -960,7 +960,7 @@ TEXTBOX
 364
 717
 611
-743
+770
 The climate affects how well the fungus grows in the cave
 11
 0.0
@@ -970,7 +970,7 @@ TEXTBOX
 83
 39
 316
-120
+151
 Press \"Set the scene\" \nto build a fresh cave \n          of bats. 
 22
 0.0
@@ -984,7 +984,7 @@ CHOOSER
 Resistance
 Resistance
 "Low" "High"
-1
+0
 
 CHOOSER
 117
@@ -994,7 +994,7 @@ CHOOSER
 Tolerance
 Tolerance
 "Low" "High"
-1
+0
 
 CHOOSER
 117
@@ -1017,12 +1017,12 @@ Try changing some of these to see what happens!
 1
 
 TEXTBOX
-1547
+1559
 74
-1938
-92
-These plots can help you keep track of what's happening
-14
+1892
+154
+These plots can help you keep\n    track of what's happening
+22
 0.0
 1
 
@@ -1068,9 +1068,9 @@ TEXTBOX
 1
 
 TEXTBOX
-143
+140
 385
-243
+240
 415
 changing
 22
@@ -1148,9 +1148,9 @@ Set the scene
 1
 
 TEXTBOX
-531
+530
 52
-583
+582
 79
 Start
 22
@@ -1164,6 +1164,16 @@ TEXTBOX
 735
 fungus grows
 11
+15.0
+1
+
+TEXTBOX
+1676
+101
+1897
+155
+what's happening
+22
 15.0
 1
 
