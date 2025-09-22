@@ -948,9 +948,9 @@ Resistance is how well the bat can fight off the\nfungus and keep it from growin
 
 TEXTBOX
 364
-599
+603
 672
-650
+654
 Tolerance is how well the bat can stay alive\neven though the fungus is still on its body
 11
 0.0
@@ -1119,9 +1119,9 @@ Tolerance
 
 TEXTBOX
 552
-599
+603
 633
-623
+627
 stay alive
 11
 15.0
@@ -1165,7 +1165,7 @@ TEXTBOX
 fungus grows
 11
 15.0
-1
+0
 
 TEXTBOX
 1665
@@ -1182,7 +1182,7 @@ TEXTBOX
 315
 512
 333
-1
+2
 11
 0.0
 1
