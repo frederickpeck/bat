@@ -42,7 +42,7 @@
 
     .missions-container {
       position: fixed;
-      top: 820px; /* distance from the top of the page */
+      top: 820px;
       left: 50%;
       transform: translateX(-50%);
       display: flex;
@@ -51,14 +51,14 @@
       align-items: flex-start;
       gap: 24px;
       z-index: 20;
-      overflow-x: auto;  /* allows horizontal scrolling if needed */
-      white-space: nowrap;
+      overflow-x: auto;   
+      white-space: normal; 
       padding: 10px 20px;
     }
     
     /* Base style for all boxes */
     .mission-box {
-      display: inline-block;
+      display: inline-block; /* keep boxes in a row */
       width: 260px;
       background: #ffffff;
       border: 3px solid #333;
@@ -68,6 +68,8 @@
       text-align: left;
       transition: transform 0.25s ease, box-shadow 0.25s ease;
       flex-shrink: 0;
+      word-wrap: break-word;  
+      white-space: normal;    
     }
     
     .mission-box:hover {
