@@ -49,18 +49,20 @@
       justify-content: center;
       gap: 24px;
       z-index: 20;
+      flex-wrap: wrap;
+      max-width: 1200px;
     }
     
+    /* Base style for all boxes */
     .mission-box {
-      width: 280px;
+      width: 260px;
       background: #ffffff;
       border: 3px solid #333;
       border-radius: 14px;
-      padding: 20px;
+      padding: 18px;
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
       text-align: left;
       transition: transform 0.25s ease, box-shadow 0.25s ease;
-      cursor: default;
     }
     
     .mission-box:hover {
@@ -68,9 +70,10 @@
       box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
     }
     
+    /* Headings for Missions */
     .mission-box h2 {
       color: #0077cc;
-      font-size: 1.3em;
+      font-size: 1.25em;
       margin-bottom: 8px;
       font-weight: 700;
       text-transform: uppercase;
@@ -78,6 +81,13 @@
       padding-bottom: 4px;
     }
     
+    /* Headings for Questions */
+    .question-box h2 {
+      color: #1a8a4d;
+      border-bottom-color: #1a8a4d;
+    }
+    
+    /* Paragraph styling */
     .mission-box p {
       margin: 6px 0;
       font-size: 1em;
@@ -94,6 +104,10 @@
       font-style: italic;
       color: #222;
     }
+
+    .question-box {
+      background: #f5fff5;
+    }
   </style>
 </head>
 <body>
@@ -106,12 +120,12 @@
 </div>
 
   <div class="missions-container">
-  <div class="mission-box">
+  <div class="mission-box question-box">
     <h2>Question #1</h2>
     <p>How does the climate affect the fungus?</p>
     <p>⇒ Try changing only the climate setting and see what happens</p>
   </div>
-  <div class="mission-box">
+  <div class="mission-box question-box">
     <h2>Question #2</h2>
     <p>Which trait helps the bats more: resistance or tolerance?</p>
     <p>⇒ Try setting one to high and the other to low. What changes?</p>
