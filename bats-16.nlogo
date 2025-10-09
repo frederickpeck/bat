@@ -1098,9 +1098,9 @@ Resistance
 1
 
 TEXTBOX
-541
+540
 492
-608
+607
 523
 fight off
 11
@@ -1118,9 +1118,9 @@ Tolerance
 1
 
 TEXTBOX
-536
+535
 603
-617
+616
 627
 stay alive
 11
@@ -1158,9 +1158,9 @@ Start
 1
 
 TEXTBOX
-530
+529
 709
-629
+628
 744
 fungus grows
 11
@@ -1175,6 +1175,16 @@ TEXTBOX
 what's happening
 22
 15.0
+1
+
+TEXTBOX
+285
+303
+435
+321
+1
+11
+0.0
 1
 
 @#$#@#$#@
