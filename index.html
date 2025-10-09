@@ -42,18 +42,18 @@
 
     .missions-container {
       position: fixed;
-      top: 820px;
-      left: 50%;
-      transform: translateX(-50%);
+      top: 820px;        /* distance from the top of the page */
+      left: 20px;        /* align to left with some margin */
+      transform: none;   /* remove horizontal centering */
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: flex-start;  /* align boxes to the left */
       align-items: flex-start;
-      gap: 40px;
+      gap: 40px;         /* space between boxes */
       z-index: 20;
-      overflow-x: auto;   
-      white-space: normal; 
-      padding: 10px 40px;
+      overflow-x: auto;  /* horizontal scroll if needed */
+      white-space: normal;
+      padding: 10px 0;
     }
     
     /* Base style for all boxes */
