@@ -1094,13 +1094,13 @@ TEXTBOX
 487
 Resistance
 18
-0.0
+15.0
 1
 
 TEXTBOX
-538
+546
 492
-605
+613
 523
 fight off
 11
@@ -1114,13 +1114,13 @@ TEXTBOX
 595
 Tolerance
 18
-0.0
+15.0
 1
 
 TEXTBOX
-533
+541
 603
-614
+622
 627
 stay alive
 11
@@ -1134,7 +1134,7 @@ TEXTBOX
 704
 Climate
 18
-0.0
+15.0
 1
 
 TEXTBOX
@@ -1158,9 +1158,9 @@ Start
 1
 
 TEXTBOX
-527
+535
 709
-626
+634
 744
 fungus grows
 11
