@@ -892,7 +892,7 @@ PLOT
 359
 1894
 551
-Sick and healthy
+Sick and healthy bats
 days
 how many bats
 0.0
@@ -912,7 +912,7 @@ PLOT
 144
 1891
 335
-% of cave contaminated
+% of cave with fungus
 days
 % of cave
 0.0
