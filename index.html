@@ -35,9 +35,51 @@
       top: 820px;
       left: 0;
       width: 100%;
-      height: 300px; /* updated per your request */
+      height: 300px; 
       background: white;
       z-index: 10;
+    }
+
+    .missions-container {
+      position: fixed;
+      top: 820px; /* 👈 distance from the top */
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      z-index: 20;
+    }
+    
+    .mission-box {
+      width: 260px;
+      background: white;
+      border: 3px solid #333;
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+    }
+    
+    .mission-box:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+    }
+    
+    .mission-box h2 {
+      color: #0077cc;
+      font-size: 1.4em;
+      margin-bottom: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    
+    .mission-box p {
+      font-size: 0.95em;
+      color: #333;
+      line-height: 1.4;
     }
   </style>
 </head>
@@ -48,6 +90,21 @@
       src="https://netlogoweb.org/web?url=https://raw.githubusercontent.com/frederickpeck/bat/main/bats-16.nlogo&embed=true">
   </iframe>
   <div class="bottom-cover"></div>
+</div>
+
+  <div class="missions-container">
+  <div class="mission-box">
+    <h2>Mission #1</h2>
+    <p>Observe how colony size changes when you adjust the climate slider.</p>
+  </div>
+  <div class="mission-box">
+    <h2>Mission #2</h2>
+    <p>Run the simulation multiple times. Do you notice any consistent trends?</p>
+  </div>
+  <div class="mission-box">
+    <h2>Mission #3</h2>
+    <p>Try to stabilize the ecosystem. What climate setting keeps it balanced?</p>
+  </div>
 </div>
 
 </body>
