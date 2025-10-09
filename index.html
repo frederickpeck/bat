@@ -39,28 +39,6 @@
       background: white;
       z-index: 10;
     }
-
-    /* Challenge modal */
-    #challengeModal {
-      display: none;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: white;
-      padding: 20px;
-      border: 2px solid black;
-      z-index: 999;
-      max-width: 400px;
-      text-align: center;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }
-
-    #challengeModal button {
-      margin-top: 10px;
-      padding: 5px 15px;
-      cursor: pointer;
-    }
   </style>
 </head>
 <body>
@@ -71,41 +49,6 @@
   </iframe>
   <div class="bottom-cover"></div>
 </div>
-
-<!-- Challenge modal -->
-<div id="challengeModal">
-  <h2>Challenge!</h2>
-  <p>Observe how the infection spreads for 5 ticks. Can you reduce the spread?</p>
-  <button onclick="document.getElementById('challengeModal').style.display='none'">Start</button>
-</div>
-
-<script>
-  // Show challenge modal after 3 seconds
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      document.getElementById('challengeModal').style.display = 'block';
-    }, 3000);
-  });
-
-  // Inactivity refresh
-  let inactivityTime = 0.2 * 60 * 1000; // 0.2 minutes
-  let inactivityTimer;
-
-  function resetTimer() {
-    clearTimeout(inactivityTimer);
-    inactivityTimer = setTimeout(() => {
-      location.reload();
-    }, inactivityTime);
-  }
-
-  // Track user activity
-  ['mousemove', 'keypress', 'touchstart', 'click'].forEach(event => {
-    window.addEventListener(event, resetTimer, false);
-  });
-
-  // Initialize timer on load
-  window.addEventListener('load', resetTimer);
-</script>
 
 </body>
 </html>
