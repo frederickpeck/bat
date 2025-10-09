@@ -42,25 +42,25 @@
 
     .missions-container {
       position: fixed;
-      top: 820px; /* 👈 distance from the top */
+      top: 820px; /* distance from the top */
       left: 50%;
       transform: translateX(-50%);
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 24px;
       z-index: 20;
     }
     
     .mission-box {
-      width: 350px;
-      background: white;
+      width: 280px;
+      background: #ffffff;
       border: 3px solid #333;
-      border-radius: 12px;
-      padding: 16px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      text-align: center;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      cursor: pointer;
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+      text-align: left;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      cursor: default;
     }
     
     .mission-box:hover {
@@ -70,16 +70,29 @@
     
     .mission-box h2 {
       color: #0077cc;
-      font-size: 1.4em;
-      margin-bottom: 10px;
+      font-size: 1.3em;
+      margin-bottom: 8px;
       font-weight: 700;
       text-transform: uppercase;
+      border-bottom: 2px solid #0077cc;
+      padding-bottom: 4px;
     }
     
     .mission-box p {
-      font-size: 0.95em;
+      margin: 6px 0;
+      font-size: 1em;
       color: #333;
       line-height: 1.4;
+    }
+    
+    .mission-box p:first-of-type {
+      font-weight: 600;
+      color: #111;
+    }
+    
+    .mission-box p:last-of-type {
+      font-style: italic;
+      color: #222;
     }
   </style>
 </head>
@@ -111,7 +124,7 @@
   <div class="mission-box">
     <h2>Mission #2</h2>
     <p>Save fragile bats!</p>
-    <p>If the bats have low resistance and low tolerance, is there any way to keep the colony alive?</p>
+    <p>⇒ If the bats have low resistance and low tolerance, is there any way to keep the colony alive?</p>
   </div>
 </div>
 
