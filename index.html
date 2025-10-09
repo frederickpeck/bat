@@ -42,19 +42,23 @@
 
     .missions-container {
       position: fixed;
-      top: 820px; /* distance from the top */
+      top: 820px; /* distance from the top of the page */
       left: 50%;
       transform: translateX(-50%);
       display: flex;
+      flex-direction: row;
       justify-content: center;
+      align-items: flex-start;
       gap: 24px;
       z-index: 20;
-      flex-wrap: wrap;
-      max-width: 1200px;
+      overflow-x: auto;  /* allows horizontal scrolling if needed */
+      white-space: nowrap;
+      padding: 10px 20px;
     }
     
     /* Base style for all boxes */
     .mission-box {
+      display: inline-block;
       width: 260px;
       background: #ffffff;
       border: 3px solid #333;
@@ -63,6 +67,7 @@
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
       text-align: left;
       transition: transform 0.25s ease, box-shadow 0.25s ease;
+      flex-shrink: 0;
     }
     
     .mission-box:hover {
@@ -70,21 +75,38 @@
       box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
     }
     
-    /* Headings for Missions */
+    /* Headings for Missions (default blue removed) */
     .mission-box h2 {
-      color: #0077cc;
       font-size: 1.25em;
       margin-bottom: 8px;
       font-weight: 700;
       text-transform: uppercase;
       border-bottom: 2px solid #0077cc;
       padding-bottom: 4px;
+      color: #0077cc;
     }
     
     /* Headings for Questions */
     .question-box h2 {
       color: #1a8a4d;
       border-bottom-color: #1a8a4d;
+    }
+    
+    /* Headings and background for red Missions */
+    .mission-red {
+      background: #fff5f5; /* soft red tint */
+      border-color: #cc3333;
+    }
+    
+    .mission-red h2 {
+      color: #cc3333;
+      border-bottom-color: #cc3333;
+    }
+    
+    /* Optional subtle tint for question boxes */
+    .question-box {
+      background: #f5fff5;
+      border-color: #1a8a4d;
     }
     
     /* Paragraph styling */
@@ -103,10 +125,6 @@
     .mission-box p:last-of-type {
       font-style: italic;
       color: #222;
-    }
-
-    .question-box {
-      background: #f5fff5;
     }
   </style>
 </head>
